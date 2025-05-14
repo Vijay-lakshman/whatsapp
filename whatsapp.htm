@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .whatsapp {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 650px;
+            border: 8px solid rgb(139, 133, 133);
+            border-radius: 30px;
+            margin: 5% auto;
+            position: relative;
+        }
+
+        .phone {
+            background-color: rgba(220, 209, 209, 0.858);
+            border-top-right-radius: 28px;
+            border-top-left-radius: 28px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .status-icons {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            i{
+                margin-left:10px;
+            }
+        }
+
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 120px;
+            height: 20px;
+            background-color: black;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #36db4c;
+        }
+
+        .header .fa-arrow-left {
+            font-size: 24px;
+            margin-right: 10px;
+            color: rgb(234, 231, 231);
+        }
+
+        .pic img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .icons {
+            margin-left: 15%;
+            font-size: 30px;
+        }
+
+        .icons i {
+            font-size: 23px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .chat {
+            flex: 1;
+            background-color: #f0eee4;
+            overflow: scroll;
+            scrollbar-width: none;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjhU4qbkDa_DVowOH5gszZEr52k3x7kSNhw&s);
+        }
+
+        .time {
+            display: inline-block;
+            background-color: black;
+            color: rgb(249, 242, 242);
+            padding: 10px;
+            margin-top: 2%;
+            border-radius: 50px;
+            margin-left: 35%;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .sent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+
+            div {
+                margin-top: 2%;
+                background-color: #075e54;
+                color: rgb(233, 236, 227);
+                padding: 10px;
+                border-radius: 50px;
+
+            }
+        }
+
+        .received {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            div {
+                margin-top: 2%;
+                background-color: #4294d7;
+                color: white;
+                padding: 10px;
+                border-radius: 50px;
+
+            }
+        }
+
+        .footer {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 2px solid #ddd;
+            border-bottom-left-radius: 28px;
+            border-bottom-right-radius: 28px;
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+            margin-left: 1%;
+            background-color: #f0f0f0;
+            border-radius: 25px;
+            padding: 5px;
+        }
+
+        .message-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+
+        .send-button {
+            background: none;
+            border: none;
+            color: rgb(26, 177, 26);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .bi:hover {
+            color: #075e54;
+        }
+
+        .fa-solid:hover {
+            color: #075e54;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whatsapp">
+        <div class="phone">
+            
+            <div class="notch"></div>
+            <div class="status-icons">
+                
+                
+            
+            </div>
+        </div>
+        <div class="header">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="pic">
+                <img src="https://i.pinimg.com/736x/2c/85/f3/2c85f3cd66f8d3d7fcb93e6da8eee08c.jpg"
+                    >
+            </div>
+            <h1 style="margin: 0; font-size: 28px; color: rgb(242, 234, 128);">Dhoni</h1>
+            <div class="icons">
+                <i class="bi bi-camera-video"></i>
+                <i class="bi bi-telephone"></i>
+                <i class="bi bi-three-dots-vertical"></i>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="time">
+                10-05-25
+            </div>
+            <div class="sent">
+                <div>hii <i class='bx bx-check-double status-icon'></i></div>
+                <div>What are you doing<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <br>
+            <div class="received">
+                <div>Hello</div>
+                <div>Nothing...What about You..?</div>
+            </div>
+            <div class="sent">
+                <div>Nothing...Just Chilling Out<i class='bx bx-check-double status-icon'></i></div>
+                <div>wanna go for a drive..?<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <div class="received">
+                <div>haa..</div>
+                <div>Come fast</div>
+            </div>
+            <div class="time">
+                12-05-25
+            </div>
+            <div class="sent">
+                <div>hii<i class='bx bx-check-double status-icon'></i></div>
+                <div>how's the drive<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <br>
+            <div class="received">
+                <div>Hello</div>
+                <div>Yeah..it was a great experience</div>
+            </div>
+            <div class="sent">
+                <div>hope you have enjoyed it..<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <div class="received">
+                <div>yup..</div>
+            </div>
+            <div class="time">
+                13-05-25
+            </div>
+            <div class="sent">
+                <div>hii<i class='bx bx-check-double status-icon'></i></div>
+                <div>how's the drive<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <br>
+            <div class="received">
+                
+                <div>Hello</div>
+                <div>Yeah..it was a great experience</div>
+            </div>
+            <div class="sent">
+                <div>hope you have enjoyed it..<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <div class="received">
+                <div>yup..</div>
+            </div>
+            
+            <div class="sent">
+                <div>hii<i class='bx bx-check-double status-icon'></i></div>
+                <div>how's the drive<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <br>
+            <div class="received">
+                <div>Hello</div>
+                <div>Yeah..it was a great experience</div>
+            </div>
+            <div class="sent">
+                <div>hope you have enjoyed it..<i class='bx bx-check-double status-icon'></i></div>
+            </div>
+            <div class="received">
+                <div>ha..</div>
+            </div>
+        </div>
+        <div class="footer">
+            <i class="bi bi-emoji-smile" style="font-size:30px;"></i>
+            <div class="input-container">
+                <input type="text" placeholder="Type a message..." class="message-input">
+                <button class="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
